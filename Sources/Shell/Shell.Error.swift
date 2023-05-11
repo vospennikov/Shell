@@ -12,5 +12,9 @@ public extension Shell {
         public let terminationStatus: Int32
         public let stdErr: Data
         public let stdOut: Data
+        
+        public var description: String {
+            String(data: stdErr, encoding: .utf8) ?? "Unknown"
+        }
     }
 }

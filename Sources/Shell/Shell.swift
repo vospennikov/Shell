@@ -8,9 +8,14 @@
 import Foundation
 
 public struct Shell {
-    public var execute: (_ command: Shell.Command) throws -> String?
+    private var execute: (_ command: Shell.Command) throws -> String
     
-    public init(execute: @escaping (_: Shell.Command) throws -> String?) {
+    @discardableResult
+    public func callAsFunction(_ command: Shell.Command) throws -> String {
+        try execute(command)
+    }
+    
+    public init(execute: @escaping (Shell.Command) throws -> String) {
         self.execute = execute
     }
 }
