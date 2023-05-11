@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Shell",
-    platforms: [.macOS(.v11)],
+    platforms: [.macOS(.v13)],
     products: [
         .library(name: "Shell", targets: ["Shell"]),
     ],
