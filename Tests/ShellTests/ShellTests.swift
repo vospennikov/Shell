@@ -1,8 +1,8 @@
 import XCTest
-@testable import Shell
+import Shell
 
 final class ShellTests: XCTestCase {
-    let shell: Shell = .live
+    let shell: Shell = .init()
     
     func test_withoutArguments() throws {
         let uptime = try shell(.uptime)
