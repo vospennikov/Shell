@@ -2,7 +2,7 @@
 //  Plain.swift
 //  
 //
-//  Created by VOSPENNIKOV Mikhail on 11.05.2023.
+//  Created by Mikhail Vospennikov on 11.05.2023.
 //
 
 import Foundation
